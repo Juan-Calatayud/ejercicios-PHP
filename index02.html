@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function loadXMLDoc() {
+      var xmlhttp=new XMLHttpRequest();
+      xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+          document.getElementById("enviar").innerHTML=xmlhttp.responseText;
+        }
+      }
+      xmlhttp.open("GET","C:/xampp/htdocs/Juan/ejemploXML.txt",true);
+      xmlhttp.send();
+    }
+  </script>
+</head>
+<body>
+ 
+  <form>
+    nombre<input type="text" name="nombre">
+    <input type="submit" name="enviar">
+    <button id="enviar" onclick="loadXMLDoc">Hola</button>
+  </form>
+</body>
+</html>

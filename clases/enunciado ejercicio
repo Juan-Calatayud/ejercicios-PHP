@@ -1,0 +1,12 @@
+BÁSICO
+
+- 2 clases separadas + 1 archivo que las incluya
+- crear instancias (probar constructor)
+- acceder a propiedades y métodos
+- Intentar cambiar propiedades (públicas y ¿privadas?)
+- hacer un "echo" del objeto
+
+MÁS
+
+- crear una tercera clase que se llame como otra ya existente. Usar namespaces y probar la sentencia 'use' con y sin alias.
+- Objetos dentro de objetos.
